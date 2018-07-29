@@ -618,6 +618,18 @@ footer h2 {
     border-top: 1px solid rgb(72, 72, 72);
 }
 
+/* ******************** */
+/* ** SUBPAGE SHARED ** */
+/* ******************** */
+
+.subpageHeader {
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1.2;
+    position: relative;
+}
+
 /* *************** */
 /* ** BLOG PAGE ** */
 /* *************** */
@@ -647,4 +659,32 @@ header.contact {
 
 .navBackground.contact {
     background-color: rgb(255, 255, 255);
+}
+
+.wrapper.subpageHeader {
+    top: -5vw;
+}
+
+.contact.subpageHeader::before {
+    content: "";
+    background: #000;
+    height: 2px;
+    width: 30px;
+    top: -2vw;
+    position: absolute;
+}
+
+.mainTopImage {
+    background: rgb(238, 237, 240) url("creative/assets/contact-1.jpeg") center 0 no-repeat; 
+    background-size: 100%;
+    height: 11.5vw;
+}
+
+.contact h3 {
+    font-weight: 600;
+}
+
+.contact p,
+.contact a {
+    color: rgb(153, 153, 153);
 }

@@ -633,3 +633,18 @@ header.blog {
 .navBackground.blog {
     background-color: rgb(248, 248, 248);
 }
+
+/* ****************** */
+/* ** CONTACT PAGE ** */
+/* ****************** */
+
+/* Contact header */
+
+header.contact {
+    height: 98.75px;
+    background: rgb(255, 255, 255);
+}
+
+.navBackground.contact {
+    background-color: rgb(255, 255, 255);
+}

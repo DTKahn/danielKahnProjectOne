@@ -18,8 +18,9 @@ body {
     line-height: 1.8;
 }
 
-.wrapper, nav {
-    max-width: 1000px;
+.wrapper, 
+nav {
+    max-width: 1070px;
     width: 60%;
 }
 
@@ -27,7 +28,17 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, nav {
+img {
+    max-width: 100%;
+}
+
+/* Home Header */
+
+h1, 
+h2, 
+h3, 
+h4, 
+nav {
     text-transform: uppercase;
     font-family: 'Montserrat', 'Open Sans', sans-serif;
     margin: 0;
@@ -84,6 +95,7 @@ a:hover i {
     transform: scale(1.2);
 }
 
+
 p {
     font-size: 1.1rem;
 }
@@ -103,13 +115,8 @@ header {
     position: relative;
 }
 
-header.blog {
-    height: 47vw;
-    background: rgb(238, 237, 240) url("creative/assets/blog-1.jpeg") fixed center 0 no-repeat;
-    background-size: 101%;
-}
-
-nav, .navBackground {
+nav, 
+.navBackground {
     position: fixed;
     top: 0;
     left: 0;
@@ -122,19 +129,12 @@ nav {
     z-index: 30;
 }
 
-img {
-    max-width: 100%;
-}
 
 .navBackground {
     z-index: 10;
     width: 100%;
     background-color: rgb(238, 237, 240);
     height: 98.75px;
-}
-
-.navBackground.blog {
-    background-color: rgb(248, 248, 248);
 }
 
 nav a {
@@ -187,7 +187,10 @@ a[href="#shoppingCart"] {
     position: relative;
 }
 
+/* Home Body */
+
 .verticalLine {
+    /* vertical lines were built before we were taught before and after, might go back and change once everything else is built */
     border: 0.5px solid rgb(153, 153, 153);
     position: absolute;
     left: 50%;
@@ -215,6 +218,7 @@ a[href="#shoppingCart"] {
     display: inline-block;
     margin-bottom: 40px;
 }
+
 
 .deskImage {
     width: 350px;
@@ -364,7 +368,9 @@ a[href="#shoppingCart"] {
     position: relative;
 }
 
-.headshot, .workWithUsLi, .teamText {
+.headshot, 
+.workWithUsLi, 
+.teamText {
     width: 200px;
     height: 200px;
     position: relative;
@@ -397,6 +403,11 @@ a[href="#shoppingCart"] {
     padding-top: 17px;
 }
 
+.headshot,
+.personalDetails {
+    transition: all 0.5s;
+}
+
 .personalDetails {
     position: absolute;
     background: rgba(238, 237, 240, 0.7);
@@ -410,6 +421,10 @@ a[href="#shoppingCart"] {
 .headshot:hover .personalDetails {
     opacity: 1;
 }
+
+/* .headshot:hover {
+    transform: scale(1.05);
+} */
 
 .personalDetailsInner {
     position: absolute;
@@ -446,7 +461,8 @@ a[href="#shoppingCart"] {
     padding-bottom: 65px;
 }
 
-.dropLineLeft, .dropLineRight {
+.dropLineLeft, 
+.dropLineRight {
     width: 50%;
     height: 48vw;
     position: relative;
@@ -563,18 +579,18 @@ footer h3 {
     padding-bottom: 20px;
 }
 
-input {
+.subscribe input {
     border-style: none;
     height: 33px;
     float: right;
 }
 
-input[type="email"] {
+.subscribe input[type="email"] {
     padding: 0 50px 0 15px;
     color: rgb(153, 153, 153)
 }
 
-input[type="submit"] {
+.subscribe input[type="submit"] {
     padding: 0 12px;
     background: rgb(195, 218, 183);
     font-size: 2.1rem;
@@ -591,4 +607,18 @@ footer h2 {
     border-top: 1px solid rgb(72, 72, 72);
 }
 
-/* just making a change to my css with a comment so that I can practice commits */
+/* *************** */
+/* ** BLOG PAGE ** */
+/* *************** */
+
+/* blog header */
+
+header.blog {
+    height: 47vw;
+    background: rgb(238, 237, 240) url("creative/assets/blog-1.jpeg") fixed center 0 no-repeat;
+    background-size: 101%;
+}
+
+.navBackground.blog {
+    background-color: rgb(248, 248, 248);
+}

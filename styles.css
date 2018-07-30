@@ -906,3 +906,119 @@ input.leaveCommentComment {
 .shareArticle .socialIcons {
     padding-top: 0;
 }
+
+.blog h2.subHeader {
+    text-align: left;
+    font-weight: bold;
+    font-size: 2.2rem;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.blog .relatedPosts .posts {
+    padding-top: 40px;
+}
+.blog .relatedPosts .post {
+    width: calc(100% / 3);
+    float: left;
+    position: relative;
+}
+
+.blog .relatedPosts .post:nth-child(2) {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.blog .relatedPosts .post:first-child {
+    padding-right: 12px;
+}
+
+.blog .relatedPosts .post:last-child {
+    padding-left: 12px;
+}
+
+.blog .relatedPosts .post p {
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-family:'Montserrat', 'Open Sans', sans-serif;
+}
+
+/* blog comment */
+
+.blog .comments h2 {
+    margin-bottom: 40px;
+}
+
+.blog .comment {
+    margin-bottom: 20px;
+    font-family:'Montserrat', 'Open Sans', sans-serif;
+}
+
+.blog .comments .headshot {
+    width: 55px;
+    float: left;
+    margin-right: 25px;
+}
+
+.blog .commentAuthor,
+.blog .reply,
+.blog .commentText,
+.blog .timeStamp {
+    float: left;
+}
+
+.blog .commentText,
+.blog .timeStamp {
+    clear: left;
+}
+
+
+.blog .reply {
+    display: inline-block;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+.blog .reply a {
+    color: rgb(64, 94, 49);
+}
+
+.blog .reply a:hover {
+    text-decoration: line-through;
+}
+
+.blog .commentText {
+    color: rgb(102, 102, 102);
+    font-size: 1rem;
+    padding-top: 5px;
+}
+
+.blog .commentAuthor {
+    text-transform: uppercase;    
+}
+
+.blog .timeStamp {
+    font-size: 0.8rem;
+    color: rgb(153, 153, 153);
+    padding-top: 5px;
+}
+
+.blog .commentAuthor::after {
+    content: " - ";
+}
+
+.blog .commentContent {
+    float: left;
+    background: rgb(246, 246, 246);
+    width: calc(100% - 80px);
+    position: relative;
+    padding: 20px;
+}
+
+.blog .commentContent::before {
+    content: "◀︎";
+    color: rgb(246, 246, 246);
+    position: absolute;
+    top: 10px;
+    left:-8px;
+    
+}

@@ -109,12 +109,22 @@
                     <h3>Get In Touch With Us</h3>
                     <p>If you have any questions please do not hesitate to send us a message</p>
                 </div>
-                <form action="" class="clearfix getInTouch">
-                    <input type="text" placeholder="Enter your name..." class="contactFormElement leaveCommentName topLine">
-                    <input type="email" placeholder="youremail@domain.com" name="" id="" class="topLine contactFormElement">
-                    <input type="text" placeholder="Subject (Optional)" class="contactFormElement leaveCommentSubject topLine">
-                    <textarea class="contactFormElement"rows="9" placeholder="Here goes your message"></textarea>
-                    <input type="button" value="Send Message" class="submitComment contactFormElement">
+                <form action="sendMessage.php" method="POST" class="clearfix getInTouch" name="sendMessage">
+                    
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="contactFormElement leaveCommentName topLine name" id="name" placeholder="Enter your name...">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="youremail@domain.com" name="email" id="email" class="topLine contactFormElement email">
+                    
+                    <label for="leaveCommentSubject">Subject (Optional)</label>
+                    <input type="text" name="leaveCommentSubject" id="leaveCommentSubject" placeholder="Subject (Optional)" class="contactFormElement leaveCommentSubject topLine">
+                    
+                    <label for="contactUsBody">Here goes your message</label>
+                    <textarea class="contactFormElement contactUsBody" name="contactUsBody" id="contactUsBody" rows="9" placeholder="Here goes your message"></textarea>
+                    
+                    <label for="submitComment">Send Message</label>
+                    <input type="submit" value="Send Message" id="submitComment" name="submitComment" class="submitComment contactFormElement">
                 </form>
             </div>
         </section>

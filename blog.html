@@ -202,12 +202,21 @@
         <section class="blogleaveAComment">
             <div class="wrapper">
                 <h2 class="subHeader">Leave a Comment</h2>
-                <form action="" class="clearfix getInTouch">
-                    <input type="text" placeholder="Enter your name..." class="contactFormElement leaveCommentName topLine">
-                    <input type="email" placeholder="youremail@domain.com" name="" id="" class="topLine contactFormElement">
-                    <input type="text" placeholder="Subject (Optional)" class="contactFormElement leaveCommentSubject topLine">
-                    <textarea class="contactFormElement" rows="9" placeholder="Here goes your comment"></textarea>
-                    <input type="button" value="Submit Comment" class="submitComment contactFormElement">
+                <form action="sendComment.php" method="POST" class="clearfix getInTouch" name="sendComment">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="contactFormElement leaveCommentName topLine name" id="name" placeholder="Enter your name...">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="youremail@domain.com" name="email" id="email" class="topLine contactFormElement email">
+                    
+                    <label for="leaveCommentSubject">Subject (Optional)</label>
+                    <input type="text" name="leaveCommentSubject" id="leaveCommentSubject" placeholder="Subject (Optional)" class="contactFormElement leaveCommentSubject topLine">
+                    
+                    <label for="contactUsBody">Here goes your comment</label>
+                    <textarea class="contactFormElement contactUsBody" name="contactUsBody" id="contactUsBody" rows="9" placeholder="Here goes your comment"></textarea>
+                    
+                    <label for="submitComment">Send Comment</label>
+                    <input type="submit" value="Send Comment" id="submitComment" name="submitComment" class="submitComment contactFormElement">
                 </form>
             </div> <!-- End of Wrapper -->
         </section> <!-- leaveAComment -->

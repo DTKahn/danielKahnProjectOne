@@ -630,6 +630,10 @@ footer h2 {
     position: relative;
 }
 
+label {
+    display: none;
+}
+
 
 /* ****************** */
 /* ** CONTACT PAGE ** */
@@ -749,7 +753,8 @@ textarea:focus {
     width: calc((100% - 6%) / 3);
 }
 
-.topLine:nth-child(1n+2){
+.topLine.email,
+.topLine.leaveCommentSubject{
     margin-left: 3%; 
 }
 
@@ -765,7 +770,7 @@ input.leaveCommentComment {
     
 }
 
-.getInTouch input[type=button] {
+.getInTouch input[type=submit] {
     text-transform: uppercase;
     color: black;
     border-bottom: 1px solid black;

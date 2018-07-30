@@ -682,9 +682,57 @@ header.contact {
 
 .contact h3 {
     font-weight: 600;
+    padding-bottom: 15px;
 }
 
-.contact p,
-.contact a {
-    color: rgb(153, 153, 153);
+.contact h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    padding-top: 15px;
+    padding-bottom: 7px;
 }
+
+.contactDetailsIntro {
+    padding-bottom: 80px;
+}
+
+.contact .contactDetails p,
+.contact .contactDetails a,
+.contactMethod li,
+.contact .getInTouch p,
+.contact .getInTouch a {
+    color: rgb(153, 153, 153);
+    line-height: 1.5;
+}
+
+.contactMethod {
+    float: left;
+    padding: 0 50px;
+    position: relative;
+    width: calc(100% / 3);
+}
+
+.contactMethod:nth-child(1n+2)::before {
+    content: "";
+    background: rgb(204, 204, 204);
+    height: 165px;
+    width: 0.5px;
+    position: absolute;
+    left: 0;
+    top: -35px;
+}
+
+.contactDetails li p,
+.contactDetails li a {
+    font-size: 1rem;
+}
+
+.contact .contactDetails i {
+    font-size: 3rem;
+}
+
+.getInTouch {
+    
+}
+

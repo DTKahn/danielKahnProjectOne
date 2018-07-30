@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <div class="navBackground blog"></div>
-    <header class="blog">
+<body class="blog">
+    <div class="navBackground"></div>
+    <header>
         <div class="wrapper">
             <nav class="clearfix">
                 <!-- left nav menu -->
@@ -66,53 +66,65 @@
             <div class="wrapper">
                 <article>
                     <h2 class="subpageHeader">How to Run a Creative Agency</h2>
-                    <ul class="postNav">
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a href="blog">Blog</a>
-                        </li>
+                    <ul class="postNav clearfix">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="blog">Blog</a></li>
                         <li>How to Run a Creative Agency</li>
                     </ul>
-                    <ul class="postMeta">
+                    <ul class="postMeta clearfix">
                         <!-- Name changed from Alex to Maggie. Cause that's how it is. (Also because I already named all of these people as the Simpsons while working on the Home page and I'm attached to the idea now.) -->
                         <li class="authorHeadshot">
                             <img src="creative/assets/blog-2.jpeg" alt="Headshot of the author of the post, Maggie Simpson, VP Customer Success">
                         </li>
+
                         <li class="authorName">
                             <h5 class="fName">Maggie</h5>
                             <p class="title">VP Customer Success</p>
                         </li>
-                        <li class="date">
+
+                        <li class="tags floatRight">
+                            <h5>Tags</h5>
+                            <ul>
+                                <li class="tag"><a href="#design">Design</a></li>
+                                <li class="tag"><a href="#web">Web</a></li>
+                                <li class="tag"><a href="#lifestyle">Lifestyle</a></li>
+                                <li class="tag"><a href="#site">Site</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="Category floatRight">
+                            <h5>Category</h5>
+                            <ul>
+                                <li class="category">
+                                    <a href="#entertainment">Entertainment</a>
+                                </li>
+                                <li class="category">
+                                    <a href="#business">Business</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="date floatRight">
                             <h5>Date</h5>
-                            <ul>
-                                <li class="category">Entertainment</li>
-                                <li class="category">Business</li>
-                            </ul>
+                            <p>July 31, 2018</p>
                         </li>
-                        <li class="tags">
-                            <ul>
-                                <li class="tag">Design</li>
-                                <li class="tag">Web</li>
-                                <li class="tag">Lifestyle</li>
-                                <li class="tag">site</li>
-                            </ul>
-                        </li>
+
                     </ul>
 
-                    <p>Analytics bandwidth bootstrapping seed round virality infographic ownership long tail gen-z stealth channels growth hacking ecosystem. Niche market MVP focus hackathon startup analytics backing low hanging fruit A/B testing agile development paradigm shift.</p>
-                    
-                    <p>Strategy deployment learning curve. Gamification bootstrapping iPhone release direct mailing. Backing iPhone product management. Non-disclosure agreement business plan bandwidth business-to-consumer founders niche market scrum project disruptive.</p>
+                    <div class="postContent">
+                        <p>Analytics bandwidth bootstrapping seed round virality infographic ownership long tail gen-z stealth channels growth hacking ecosystem. Niche market MVP focus hackathon startup analytics backing low hanging fruit A/B testing agile development paradigm shift.</p>
+                        
+                        <p>Strategy deployment learning curve. Gamification bootstrapping iPhone release direct mailing. Backing iPhone product management. Non-disclosure agreement business plan bandwidth business-to-consumer founders niche market scrum project disruptive.</p>
 
-                    <p>Infrastructure customer pivot seed money incubator funding equity twitter early adopters. Strategy client technology release supply chain customer funding return on investment. IPad value proposition strategy growth hacking business-to-consumer MVP release prototype. Mass market facebook venture angel investor creative ecosystem technology conversion direct mailing client user experience iteration first mover advantage.Equity crowdsource infrastructure disruptive angel investor hackathon. Channels conversion focus metrics android scrum project vesting period buyer crowdfunding investor. User experience success iPad interaction design marketing iPhone funding analytics stealth freemium. Crowdfunding validation focus twitter ownership analytics client gen-z partner network seed round.</p>
-                    
-                    <p>Crowdfunding conversion accelerator scrum project angel investor. Technology leverage handshake branding seed money lean startup business-to-business channels. Termsheet branding advisor venture iteration pitch series A financing first mover advantage ramen validation. Return on investment deployment analytics MVP. Scrum project learning curve equity social proof. Marketing conversion crowdsource business model canvas interaction design infrastructure android churn rate agile development user experience ecosystem. Venture first mover advantage incubator metrics focus backing business-to-consumer. Innovator advisor incubator MVP.</p>
+                        <p>Infrastructure customer pivot seed money incubator funding equity twitter early adopters. Strategy client technology release supply chain customer funding return on investment. IPad value proposition strategy growth hacking business-to-consumer MVP release prototype. Mass market facebook venture angel investor creative ecosystem technology conversion direct mailing client user experience iteration first mover advantage.Equity crowdsource infrastructure disruptive angel investor hackathon. Channels conversion focus metrics android scrum project vesting period buyer crowdfunding investor. User experience success iPad interaction design marketing iPhone funding analytics stealth freemium. Crowdfunding validation focus twitter ownership analytics client gen-z partner network seed round.</p>
+                        
+                        <p>Crowdfunding conversion accelerator scrum project angel investor. Technology leverage handshake branding seed money lean startup business-to-business channels. Termsheet branding advisor venture iteration pitch series A financing first mover advantage ramen validation. Return on investment deployment analytics MVP. Scrum project learning curve equity social proof. Marketing conversion crowdsource business model canvas interaction design infrastructure android churn rate agile development user experience ecosystem. Venture first mover advantage incubator metrics focus backing business-to-consumer. Innovator advisor incubator MVP.</p>
+                    </div>
 
 
-                    <div class="shareArticle">
+                    <div class="shareArticle clearfix">
                         <p>Share:</p>
-                        <ul class="socialIcons">
+                        <ul class="socialIcons clearfix">
                             <!-- facebook -->
                             <li>
                                 <a href="#facebook" class="hoverGrow">
@@ -190,12 +202,12 @@
         <section class="blogleaveAComment">
             <div class="wrapper">
                 <h2>Leave a Comment</h2>
-                <form action="" class="clearfix blog">
-                    <input type="text" value="Enter your name..." class="leaveCommentName">
-                    <input type="email" value="youremail@domain.com" name="" id="">
-                    <input type="text" value="Subject(Optional)" class="leaveCommentSubject">
-                    <input type="text" value="Here goes your comment" class="leaveCommentComment">
-                    <input type="button" value="Submit Comment" class="submitComment">
+                <form action="" class="clearfix getInTouch">
+                    <input type="text" placeholder="Enter your name..." class="contactFormElement leaveCommentName topLine">
+                    <input type="email" placeholder="youremail@domain.com" name="" id="" class="topLine contactFormElement">
+                    <input type="text" placeholder="Subject (Optional)" class="contactFormElement leaveCommentSubject topLine">
+                    <textarea class="contactFormElement" rows="9" placeholder="Here goes your comment"></textarea>
+                    <input type="button" value="Submit Comment" class="submitComment contactFormElement">
                 </form>
             </div> <!-- End of Wrapper -->
         </section> <!-- leaveAComment -->

@@ -630,21 +630,6 @@ footer h2 {
     position: relative;
 }
 
-/* *************** */
-/* ** BLOG PAGE ** */
-/* *************** */
-
-/* blog header */
-
-header.blog {
-    height: 47vw;
-    background: rgb(238, 237, 240) url("creative/assets/blog-1.jpeg") fixed center 0 no-repeat;
-    background-size: 101%;
-}
-
-.navBackground.blog {
-    background-color: rgb(248, 248, 248);
-}
 
 /* ****************** */
 /* ** CONTACT PAGE ** */
@@ -791,4 +776,133 @@ input.leaveCommentComment {
     background: rgb(238, 237, 240) url("creative/assets/contact-2.jpeg") center 0 no-repeat; 
     background-size: 100%;
     height: 35.5vw;
+}
+/* *************** */
+/* ** BLOG PAGE ** */
+/* *************** */
+
+/* blog header */
+
+.blog header {
+    height: 47vw;
+    background: rgb(238, 237, 240) url("creative/assets/blog-1.jpeg") fixed center 0 no-repeat;
+    background-size: 101%;
+}
+
+.blog .navBackground {
+    background-color: rgb(248, 248, 248);
+}
+
+.blog h2 {
+    padding: 85px 0 12px 0;
+}
+
+.blog .postNav {
+    padding-bottom: 60px;
+}
+
+.blog .postNav li {
+    float: left;
+    padding-right: 5px;
+}
+.blog .postNav li a {
+    color: rgb(153, 153, 153);
+}
+
+.blog .postNav li a:hover {
+    text-decoration: line-through;
+}
+
+.blog .postNav li:nth-child(1n+2)::before {
+    content: "/";
+    padding-right: 5px;
+    color: rgb(153, 153, 153);
+}
+
+.postMeta {
+    border-bottom: 1px solid rgb(215, 215, 215);
+    padding-bottom: 5px;
+}
+
+.postMeta li {
+    float: left;
+}
+
+.postMeta .floatRight {
+    float: right;
+    padding: 0 20px 0 40px
+}
+
+.postMeta .authorName {
+    padding-left: 20px;
+}
+
+.postMeta img {
+    border-radius: 50%;
+}
+
+.postMeta .authorHeadshot {
+    width: 55px;
+    position: relative;
+    top: -12px;
+}
+
+.postMeta a,
+.postMeta p {
+    color: rgb(153, 153, 153);
+    font-size: 1rem;
+}
+
+.postMeta a:hover {
+    text-decoration: line-through;
+}
+
+.postMeta .category:nth-child(1n+2)::before,
+.postMeta .tag:nth-child(1n+2)::before {
+    content: ", ";
+    color: rgb(153, 153, 153);
+}
+
+.postMeta h5 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.postContent {
+    padding-top: 40px;
+}
+
+.postContent p {
+    padding-bottom: 20px;
+    color: rgb(153, 153, 153);
+}
+
+.postContent p:first-child {
+    color: black;
+    font-weight: 600;
+}
+
+.shareArticle p {
+    text-transform: uppercase;
+    float: left;
+    font-size: 1.2rem;
+}
+
+.shareArticle ul {
+    float: left;
+}
+
+.shareArticle li {
+    float: left;
+}
+
+.shareArticle a {
+    padding: 8px;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.shareArticle .socialIcons {
+    padding-top: 0;
 }

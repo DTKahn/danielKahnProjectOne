@@ -293,8 +293,12 @@
                     <div class="subscribe footerThird">
                         <h3>Subscribe Now</h3>
                         <p>Signup for emails and notifications below</p>
-                        <form action="" class="clearfix">
-                            <input type="submit" value="➞"><input type="email" placeholder="Enter your email">
+                        <form action="mailingList.php" method="POST" class="clearfix" name="mailingList">
+                            <label for="submitEmail">Submit Email</label>
+                            <input type="submit" id="submitEmail" name="submitEmail" class="submitEmail" value="➞">
+                        
+                            <label for="enterYourEmailFooter">Submit Email</label>
+                            <input type="email" id="enterYourEmailFooter" name="enterYourEmailFooter" class="enterYourEmailFooter" placeholder="Enter your email">
                         </form>
                     </div> <!-- subscribe -->
                 </div> <!-- footerInner -->

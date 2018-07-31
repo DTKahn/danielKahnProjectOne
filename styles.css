@@ -973,8 +973,7 @@ input.leaveCommentComment {
 
 .blog .relatedPosts .blogPostName p {
     font-size: 1.8rem;
-    color: rgb(97, 97, 97);
-    font-weight: bold;
+    color: black;
     padding: 20px;
     text-align: center;
     position: absolute;

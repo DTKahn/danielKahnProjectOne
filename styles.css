@@ -534,7 +534,8 @@ footer a {
     color: white;
 }
 
-.recentPosts a:hover {
+.recentPosts a:hover,
+footer .contactUs a[href="contact@creative.com"]:hover {
     text-decoration: line-through;
 }
 
@@ -918,6 +919,7 @@ input.leaveCommentComment {
     font-weight: bold;
     font-size: 2.2rem;
     border-bottom: 1px solid rgb(215, 215, 215);
+    margin-top: 70px;
 }
 
 .blog .relatedPosts .posts {
@@ -947,6 +949,41 @@ input.leaveCommentComment {
     text-transform: uppercase;
     font-family:'Montserrat', 'Open Sans', sans-serif;
 }
+
+.blog .relatedPosts a {
+    position: relative;
+    display: block;
+}
+
+.blog .relatedPosts a:hover .blogPostName {
+    opacity: 1;
+}
+
+.blog .relatedPosts .blogPostName {
+    position: absolute;
+    background: rgba(238, 237, 240, 0.7);
+    top: 0;
+    left: 0;
+    bottom: 5px;
+    right: 0;
+    padding: 0;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.blog .relatedPosts .blogPostName p {
+    font-size: 1.8rem;
+    color: rgb(97, 97, 97);
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /* blog comment */
 

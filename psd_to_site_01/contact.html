@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DTK - PSD to Site1 - Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="contact">
+    <div class="navBackground contact"></div>
+    <header class="contact">
+        <div class="wrapper">
+            <nav class="clearfix">
+                <!-- left nav menu -->
+                <ul class="navLeft clearfix">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+
+                <h1>Creative</h1>
+                <!-- <div class="h1Background"></div> -->
+                <!-- covers transition veritical line before navBackground emerges -->
+
+                <!-- right nav menu -->
+                <ul class="navRight clearfix">
+                    <li>
+                        <a href="#shop">Shop</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#search">
+                            <i class="fas fa-search navIcon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#shoppingCart">
+                            <i class="fas fa-shopping-bag navIcon"></i>
+                            <div class="cartCountCircle">
+                                <p>2</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- end of wrapper for nav -->
+
+    </header>
+    <main>
+        <div class="mainTopImage"></div>
+        <div class="wrapper subpageHeader">
+            <h2 class="contact subpageHeader">Contact</br>Us</h2> <!-- Feel drity using a br tag but Ryan used one for a similar purpose in his codealong video for project 1 so I'm going with it!-->
+        </div>
+        <section class="contactDetails clearfix">
+            <div class="wrapper">
+                <div class="contactDetailsIntro">
+                    <h3 class="contact">Contact Details</h3>
+                    <p>If you need any help, please contact us or send us an email or go to our forum.</p>
+                    <p>We are sure that you can receive our reply as soon as possible.</p>
+                </div>
+                <ul>
+                    <li class="contactMethod phone">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Phone</h4>
+                        <ul>
+                            <li>Phone 01: 123, 456 7890</li>
+                            <li>Phone 02: 345 678 9101</li>
+                        </ul>
+                    </li>
+                    <li class="contactMethod address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Address</h4>
+                        <p>6591 Orchard Street, Toronto, Ontario</p>
+                    </li>
+                    <li class="contactMethod email">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <ul>
+                            <li>
+                                <a href="contact@creative.com">contact@creative.com</a>
+                            </li>
+                            <li>
+                                <a href="info@creative.com">info@creative.com</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="getInTouch">
+            <div class="wrapper">
+                <div class="getInTouchIntro">
+                    <h3>Get In Touch With Us</h3>
+                    <p>If you have any questions please do not hesitate to send us a message</p>
+                </div>
+                <form action="sendMessage.php" method="POST" class="clearfix getInTouch" name="sendMessage">
+                    
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="contactFormElement leaveCommentName topLine name" id="name" placeholder="Enter your name...">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="youremail@domain.com" name="email" id="email" class="topLine contactFormElement email">
+                    
+                    <label for="leaveCommentSubject">Subject (Optional)</label>
+                    <input type="text" name="leaveCommentSubject" id="leaveCommentSubject" placeholder="Subject (Optional)" class="contactFormElement leaveCommentSubject topLine">
+                    
+                    <label for="contactUsBody">Here goes your message</label>
+                    <textarea class="contactFormElement contactUsBody" name="contactUsBody" id="contactUsBody" rows="9" placeholder="Here goes your message"></textarea>
+                    
+                    <label for="submitComment">Send Message</label>
+                    <input type="submit" value="Send Message" id="submitComment" name="submitComment" class="submitComment contactFormElement">
+                </form>
+            </div>
+        </section>
+        <section class="preFooterHero"></section>
+    </main>
+    <footer>
+        <div class="footerTop">
+            <div class="wrapper">
+                <div class="footerInner clearfix">
+                    <div class="contactUs footerThird">
+                        <h3>Contact Us</h3>
+                        <p>6591 Orchard Street, Toronto, Ontario</p>
+                        <p>Email:
+                            <a href="contact@creative.com">contact@creative.com</a>
+                        </p>
+                        <p>Phone 01: 123 456 7890</p>
+                        <p>Phone 02: 345 678 9101</p>
+                        <p>Fax: 643 6543 898</p>
+                        <div class="socialIcons">
+                            <a href="#facebook" class="hoverGrow">
+                                <i title="Link to Facebook" class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#twitter" class="hoverGrow">
+                                <i title="Link to Twitter" class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#instagram" class="hoverGrow">
+                                <i title="Link to Instagram" class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- contactUs-->
+                    <div class="recentPosts footerThird">
+                        <h3>Recent Posts</h3>
+                        <ul>
+                            <li><a href="#1">Conversion hackathon partner</a></li>
+                            <li><a href="#2">Network channels entrepreneur</a></li>
+                            <li><a href="#3">Return on investment creative</a></li>
+                            <li><a href="#4">Assets interaction design venture</a></li>
+                            <li><a href="#5">Infographic learning curve</a></li>
+                        </ul>
+                    </div>
+                    <!-- recentPosts -->
+                    <div class="subscribe footerThird">
+                        <h3>Subscribe Now</h3>
+                        <p>Signup for emails and notifications below</p>
+                        <form action="mailingList.php" method="POST" class="clearfix" name="mailingList">
+                            <label for="submitEmail">Submit Email</label>
+                            <input type="submit" id="submitEmail" name="submitEmail" class="submitEmail" value="➞">
+                            
+                            <label for="enterYourEmailFooter">Submit Email</label>
+                            <input type="email" id="enterYourEmailFooter" name="enterYourEmailFooter" class="enterYourEmailFooter" placeholder="Enter your email">
+                        </form>
+                    </div>
+                    <!-- subscribe -->
+                </div>
+                <!-- footerInner -->
+            </div>
+            <!-- wrapper -->
+        </div>
+        <!-- footerTop-->
+        <div class="footerBottom">
+            <h2>Creative Agency</h2>
+        </div>
+        <!-- footerBottom-->
+    </footer>
+</body>
+
+</html>
